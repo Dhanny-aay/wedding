@@ -2,25 +2,125 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground: #1b1b1b;
+  --bg-primary: #008080;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #1b1b1b;
+    --bg-primary: #008080;
+  }
+}
+
+@font-face {
+  font-family: "alexbrush";
+  src: url("./fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "didact";
+  src: url("./fonts/DidactGothic-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@layer base {
+  :root {
+    --font-alexBrush: "alexbrush", sans-serif;
+    --font-didact: "didact", sans-serif;
+  }
+}
+
+/* tailwind variables  */
+/* Custom theme variables */
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #1b1b1b;
+    --bg-primary: #008080;
+  }
+}
+
+/* Custom font sizes */
+@layer utilities {
+  .font-alexBrush {
+    font-family: var(--font-alexBrush);
+  }
+  .font-didact {
+    font-family: var(--font-didact);
+  }
+
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+  .bg-foreground {
+    background-color: var(--bg-foreground);
+  }
+  .bg-background {
+    background-color: var(--bg-background);
+  }
+  .text-foreground {
+    color: var(--bg-foreground);
+  }
+  .text-background {
+    color: var(--bg-background);
+  }
+  .text-primary {
+    color: var(--bg-primary);
+  }
+  .text-h1 {
+    font-size: 42px;
+    line-height: 120%;
+  }
+}
+
+/* Hide scrollbar utility */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: var(--font-didact), sans-serif;
+}
+
+/* First slide - original hero background */
+.footer-container {
+  background-image: url("./components/assets/placeholder4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(100, 158, 147, 0.6) 0%,
+    rgba(100, 158, 147, 0.62) 100%
+  );
+}
+.hero-container {
+  background-image: url("./components/assets/hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Mobile-specific background image for first slide */
+@media (max-width: 767px) {
+  .hero-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./components/assets/mobHero.png");
+  }
 }
