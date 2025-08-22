@@ -17,13 +17,11 @@
 @font-face {
   font-family: "alexbrush";
   src: url("./fonts/AlexBrush-Regular.ttf") format("truetype");
-  font-display: swap;
   font-weight: 400;
 }
 @font-face {
   font-family: "didact";
   src: url("./fonts/DidactGothic-Regular.ttf") format("truetype");
-  font-display: swap;
   font-weight: 400;
 }
 
