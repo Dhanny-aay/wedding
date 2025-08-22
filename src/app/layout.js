@@ -1,5 +1,18 @@
 import "./globals.css";
 import QueryProvider from "./utils/queryProvider";
+import { Alex_Brush, Didact_Gothic } from "next/font/google";
+
+const alexBrush = Alex_Brush({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-alex-brush",
+});
+
+const didactGothic = Didact_Gothic({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-didact-gothic",
+});
 
 export const metadata = {
   title: "Hikmat & Noah",
@@ -9,24 +22,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        {/* Preload fonts */}
-        <link
-          rel="preload"
-          href="/fonts/AlexBrush-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/DidactGothic-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${alexBrush.variable} ${didactGothic.variable}`}
+    >
       <body className="antialiased">
         <QueryProvider>{children}</QueryProvider>
       </body>

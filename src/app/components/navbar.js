@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "./assets/logo.svg";
+import logo from "./assets/logo.webp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

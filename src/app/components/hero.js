@@ -6,15 +6,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-import hero from "./assets/hero.png";
-import hero1 from "./assets/hero1.jpg";
-import hero2 from "./assets/hero2.jpg";
-import hero3 from "./assets/hero3.jpg";
-import hero4 from "./assets/hero4.jpg";
-import heroMob from "./assets/heroMob.png";
-import heroMob1 from "./assets/heroMob1.jpg";
-import heroMob2 from "./assets/heroMob2.jpg";
-import heroMob3 from "./assets/heroMob3.jpg";
+import hero from "./assets/hero.webp";
+import hero1 from "./assets/hero1.webp";
+import hero2 from "./assets/hero2.webp";
+import hero3 from "./assets/hero3.webp";
+import hero4 from "./assets/hero4.webp";
+import heroMob from "./assets/heroMob.webp";
+import heroMob1 from "./assets/heroMob1.webp";
+import heroMob2 from "./assets/heroMob2.webp";
+import heroMob3 from "./assets/heroMob3.webp";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
