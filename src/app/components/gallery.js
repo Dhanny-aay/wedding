@@ -181,7 +181,7 @@ const Gallery = () => {
         <p className="text-primary text-sm tracking-[5px] uppercase">
           Our Gallery
         </p>
-        <h2 className="mt-4 font-alexBrush text-[#1b1b1b] text-[40px] md:text-[60px]">
+        <h2 className="mt-4 font-alexBrush text-[#1b1b1b] text-[40px] md:text-[60px] leading-[1]">
           Our Memories
         </h2>
 

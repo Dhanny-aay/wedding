@@ -12,7 +12,7 @@ const Venue = () => {
         <p className=" mt- text-primary font-normal text-sm leading-1 tracking-[5px] uppercase ">
           Save the date
         </p>
-        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[60px] leading-[60px] font-normal">
+        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[40px] md:text-[60px] leading-[1] font-normal">
           When & Where
         </h2>
 
