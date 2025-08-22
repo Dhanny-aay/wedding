@@ -6,12 +6,15 @@ const About = () => {
   return (
     <>
       {/* the wedding */}
-      <div className=" bg-[#FDF6F8] py-16  px-4 md:px-12 lg:px-40 w-full flex items-center flex-col justify-center  ">
+      <div
+        id="couple"
+        className=" bg-[#FDF6F8] py-16  px-4 md:px-12 lg:px-40 w-full flex items-center flex-col justify-center  "
+      >
         <img src={couple.src} className="w-[226px] h-[226px] " alt="" />
         <p className=" mt-11 text-primary font-normal text-sm leading-1 tracking-[5px] uppercase ">
           Hello & Welcome
         </p>
-        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[60px] leading-[60px] font-normal">
+        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[40px] leading-[40px] md:text-[60px] md:leading-[60px] font-normal">
           Our Wedding
         </h2>
 
@@ -27,10 +30,10 @@ const About = () => {
         <p className=" mt-11 text-primary font-normal text-sm leading-1 tracking-[5px] uppercase ">
           Bride & Groom
         </p>
-        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[60px] leading-[60px] font-normal">
+        <h2 className=" mt-4 font-alexBrush text-[#1b1b1b] text-[40px] leading-[40px] md:text-[60px] md:leading-[60px] font-normal">
           Happy Couple
         </h2>
-        <div className=" mt-20 max-w-[790px] grid grid-cols-2 gap-8">
+        <div className=" mt-20 max-w-[790px] grid grid-cols-1  md:grid-cols-2 gap-8">
           {/* bride */}
           <div className=" w-full flex flex-col items-center justify-center text-center">
             <img src={her.src} className="w-[190px] h-[190px] " alt="" />

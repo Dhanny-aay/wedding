@@ -121,6 +121,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("./components/assets/mobHero.png");
+    background-image: url("./components/assets/heroMob.png");
   }
 }
