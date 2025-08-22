@@ -108,19 +108,19 @@ body {
     rgba(100, 158, 147, 0.62) 100%
   );
 }
-.hero-container {
+/* .hero-container {
   background-image: url("./components/assets/hero.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* Mobile-specific background image for first slide */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .hero-container {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("./components/assets/heroMob.png");
   }
-}
+} */
