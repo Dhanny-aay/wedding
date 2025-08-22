@@ -67,7 +67,7 @@ const App = () => {
                 alt={`Hero Slide ${index + 1}`}
               />
               <div className="absolute top-0 left-0 bg-[#1B1B1B]/40 w-full h-full flex flex-col items-center justify-center text-center">
-                <h1 className="text-white text-[58px] leading-[1] md:text-[120px] font-alexBrush md:leading-[150px] mt-32 md:mt-0">
+                <h1 className="text-white text-[58px] leading-[1] md:text-[120px] font-alexBrush md:leading-[150px] mt- md:mt-0">
                   Hikmat & Noah
                 </h1>
                 <p className="text-white font-normal text-sm md:text-[32px] leading-[1] tracking-[1.6px] md:tracking-[5px] mt-2">

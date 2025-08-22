@@ -90,7 +90,8 @@ const Gallery = () => {
         No Memories Yet
       </h3>
       <p className="text-gray-600 mb-6 leading-relaxed">
-        Be the first to share your beautiful moments.
+        Be the first to share your beautiful moments from Hikmat & Noah's
+        special day. Your memories will help tell their love story.
       </p>
       <button
         onClick={() => setisShareModalOpen(true)}
